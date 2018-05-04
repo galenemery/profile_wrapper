@@ -1,0 +1,12 @@
+name: <%= @profile_wrapper[:profile_name] %>
+title: <%= @profile_wrapper[:profile_name] %>
+maintainer: <%= @profile_wrapper[:profile_author] %>
+copyright: <%= @profile_wrapper[:profile_author] %>
+copyright_email: <%= @profile_wrapper[:profile_author_email] %>
+license: <%= @profile_wrapper[:profile_license] %>
+summary: A Wrapper Inspec profile for <%= @profile_wrapper[:profile_name] %> based on <%= @profile_wrapper[:base_profile] %>
+version: 0.1.0
+
+depends:
+  - name: <%= @profile_wrapper[:base_profile] %>
+    <%= @profile_wrapper[:path_type] %>: <%= @profile_wrapper[:base_profile_path] %>

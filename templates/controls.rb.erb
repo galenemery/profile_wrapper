@@ -1,0 +1,37 @@
+
+include_controls '<%= @base_profile %>' do
+
+<% @skip_controls.each do |skip_control| -%>
+  skip_control <%= skip_control %>
+<% end %>
+<% @controls.each do |control,hash| -%>
+
+  control '<%= control %>' do
+  <% if hash[:title] %>
+    title <%= hash[:title] %>
+  <% end %>
+  <% if hash[:impact] %>
+    impact <%= hash[:impact] %>
+  <% end %>
+  <% if hash[:expiration] %>
+    only_if { ::Date.parse(<%= hash[:expiration] %>) < Date.today }
+  <% else %>
+    only_if { false }
+  <% end %>
+  <% if hash[:tags] %>
+    <% hash[:tags].each do |tag| %>
+    tag '<%= tag %>'
+    <% end %>
+  <% end %>
+  <% if hash[:refs] %>
+    <% hash[:refs].each do |ref| %>
+    ref '<%= ref %>'
+  <% end %>
+<% end %>
+<% if hash[:describe] %>
+    <%= hash[:describe] %>
+<% end %>
+  end
+<% end -%>
+
+end

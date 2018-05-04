@@ -1,0 +1,37 @@
+{
+  "profile_wrapper": {
+    "profile_name": "GeoAxis",
+    "profile_author": "Galen Emery",
+    "profile_author_email": "Galen@chef.io",
+    "profile_license": "Apache-2.0",
+    "base_profile": "disa_stig-el7",
+    "base_profile_path": "CiQwMzNkYjMzYS1iZDcwLTQwNjktYTRiNi0zYTVlYzEyMTdiOTcSBWxvY2Fs/disa_stig-el7",
+    "path_type": "compliance",
+    "waived_controls": {
+        "V-71849": {
+            "impact": 0.0,
+            "title": "This is a changed title",
+            "tags": [
+                "test-tag",
+                "test-tag2"
+            ],
+            "refs": [
+                "example-ref",
+                "https://ref.tld"
+            ]
+        },
+            "V-71897": {
+            "impact": 0.0,
+            "expiration": "2018-06-01"
+        },
+        "V-71925": {
+            "impact": 0.0,
+            "expiration": "2018-12-01"
+        }
+    },
+    "skipped_controls": [
+      "V-13581",
+      "V-87124"
+    ]
+  }
+}
