@@ -1,9 +1,9 @@
 {
   "profile_wrapper": {
-    "profile_name": "GeoAxis",
+    "profile_name": "wrapper_profile",
     "profile_author": "Galen Emery",
     "profile_author_email": "Galen@chef.io",
-    "profile_license": "Apache-2.0",
+    "profile_license": "All Rights Reserved",
     "base_profile": "disa_stig-el7",
     "base_profile_path": "CiQwMzNkYjMzYS1iZDcwLTQwNjktYTRiNi0zYTVlYzEyMTdiOTcSBWxvY2Fs/disa_stig-el7",
     "path_type": "compliance",
