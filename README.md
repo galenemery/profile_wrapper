@@ -1,5 +1,7 @@
 # profile_wrapper
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/5d454bdd-e86c-4f17-bab7-6e83d098a9cc.svg?orgId=181077132735)](https://app.soluble.cloud/repos/details/github.com/galenemery/profile_wrapper?orgId=181077132735)  
+
 This cookbook will consume attributes to create an inspec wrapper profile around your defined base profile.  It supports skipping controls and modifying existing controls.
 
 Usage:
